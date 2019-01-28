@@ -17,7 +17,7 @@ Here's an example of a correctly set up material:
  - Scale : the scale of the fractal, if the haze surrounding the fractal is too big for the fractal, just lower the scale
  - C : changes the shape of the fractal (connect it to a combineXYZ to tweak the values)
  - DistanceDelta : it moves the bound of the fractal outside or inside, keep this value at 0 to get the most details
- - output : The distance to the fractal
+ - *output* : The distance to the fractal
 
 **the coloring shader:**
  - Distance : the distance to the fractal (should be linked to the output of the juliabulb shader)
@@ -27,4 +27,4 @@ Here's an example of a correctly set up material:
  - HazeClosener : if you want to keep the haze close to the fractal, raise this value
  - HazeAlpha : the density of the haze
  - Anisotropy : anisotropy for the volume shader
- - output : A volume shader
+ - *output* : A volume shader
