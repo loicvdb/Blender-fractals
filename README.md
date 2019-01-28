@@ -9,7 +9,7 @@ Here's an example of a correctly set up material:
 
 
 
-# info:
+# Documentation:
 **the juliabulb shader:**
  - Power : changes the shape of the fractal
  - Iterations : more iterations give more details but makes the shader slower
