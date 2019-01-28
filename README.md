@@ -4,6 +4,9 @@ Custom OSL shaders to create fractals in Blender
 # Instructions:
 To make a fractal, open a new 1.79 blender file and keep the default cube, the fractal will be inside of it. Change the engine to cycles, put the CPU as your device and tick the "Open Shading Language" box just under it. Then edit the material of the cube, add two script nodes, choose the "external" type and select the juliabulb and coloring shader. You'll then need to connect a combineXYZ to the "C" input of the juliabulb shader if you want to change the values (the default ones are (.5, .5, .5)).
 
+Here's an example of a correctly set up material:
+![alt text](https://i.imgur.com/FYhRpR4.png)
+
 
 
 # info:
