@@ -1,0 +1,19 @@
+shader coloring(
+	float Distance = 0,
+	float MaxDensity = 100,
+	color ColorIn = color(.15, .5, .25),
+	color HazeColor = color(.3, .75, 1),
+	float HazeClosener = 20,
+	float HazeAlpha = .01,
+	float Anisotropy = 0,
+	output closure color Volume = absorption()
+)
+{
+	if(Distance <= 0){
+		Volume = ColorIn * MaxDensity * henyey_greenstein(0);
+	}
+	else {
+		float density = MaxDensity * HazeAlpha * pow(1.0/(Distance + 1), HazeClosener);
+		Volume = HazeColor * density * henyey_greenstein(0);
+	}
+}
