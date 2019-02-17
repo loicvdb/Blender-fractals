@@ -1,0 +1,15 @@
+shader materials(
+	float Distance = 0,
+	float HazeClosener = 20,
+	closure color InsideVolume = 0,
+	closure color Haze = 0,
+	output closure color Volume = 0
+)
+{
+	if(Distance <= 0){
+		Volume = InsideVolume;
+	}
+	else {
+		Volume = Haze * pow(1.0/(Distance + 1), HazeClosener);
+	}
+}
