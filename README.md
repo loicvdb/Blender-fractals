@@ -13,7 +13,7 @@ Here's an example of a correctly set up material:
 **the juliabulb shader:**
  - Power : changes the shape of the fractal
  - Iterations : more iterations give more details but makes the shader slower
- - Bailout : the radius of the sphere containing the fractal, values lower than
+ - Bailout : the radius of the invisible sphere containing the fractal, just keep it to 10 or bigger.
  - Scale : the scale of the fractal, if the fractal goes out of the bounds of the object, just lower the scale.
  - C : changes the shape of the fractal (connect it to a combineXYZ to tweak the values)
  - DistanceDelta : it moves the bound of the fractal outside or inside, keep this value at 0 to get the most details
