@@ -6,7 +6,7 @@ Custom OSL shaders to create fractals in Blender with Cycles
 To make a fractal, open a new blender file and keep the default cube, the fractal will be inside of it. Change the engine to Cycles, put your CPU as your rendering device and tick the "Open Shading Language" box just under it. Then edit the material of the cube, add two script nodes, choose the "external" type and select the juliabulb and materials shader. Then connect two volume shaders to the "Haze" and "InsideVolume" inputs of the material shader (you can put only one of the two if you want, the volume will be transparent if unconnected). You'll then need to connect a combineXYZ to the "C" input of the juliabulb shader if you want to change the values (the default ones are (.5, .5, .5)).
 
 Here's an example of a correctly set up material:
-![alt text](https://i.imgur.com/e40uGbo.png)
+![alt text](https://i.imgur.com/vLgjJpB.png)
 
 
 # Documentation:
