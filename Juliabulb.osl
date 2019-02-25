@@ -1,10 +1,9 @@
 shader Juliabulb(
-  point C = point(.5, .5, .5),
+	point C = point(.5, .5, .5),
 	float Power = 9,
 	int Iterations = 10,
 	float Bailout = 10,
 	float Scale = .5,
-  float DistanceDelta = 0,
 	output float Distance = 0
 )
 {
@@ -29,5 +28,5 @@ shader Juliabulb(
 		z = zr * point(sin(theta)*cos(phi), sin(phi)*sin(theta), cos(theta));
 		z += C;
 	}
-	Distance = (0.5*log(r)*r/dr - DistanceDelta) * Scale;
+	Distance = 0.5*log(r)*r/dr * Scale;
 }
